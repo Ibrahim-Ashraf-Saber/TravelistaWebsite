@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sevices</title>
+    <!-- Link CSS File -->
+    <link rel="stylesheet" href="../css/services.css" />
+  </head>
+  <body>
+    <div class="page-2">
+      <div class="header">
+        Select What do you Want?
+        <select name="nav" id="nav" onchange="showSelected(this)">
+          <option value="0" selected disabled>Select</option>
+          <option value="1">Book Trip</option>
+          <option value="2">Book Guide</option>
+          <option value="3">Trip Table</option>
+          <option value="4">Guide Table</option>
+        </select>
+      </div>
+      <div class="content" style="transition: 0.3s">
+        <div class="null" style="height: 500px"></div>
+        <div id="book-trip"></div>
+        <div class="book-trip">
+          <div class="trip-1" id="trip">
+            <div class="img"></div>
+            <div class="date">23 August - 29 August</div>
+            <div class="info">
+              <div class="location">Egypt</div>
+              <div class="price">$200</div>
+            </div>
+          </div>
+          <div class="trip-2" id="trip">
+            <div class="img"></div>
+            <div class="date">23 August - 29 August</div>
+            <div class="info">
+              <div class="location">Paris</div>
+              <div class="price">$200</div>
+            </div>
+          </div>
+          <div class="trip-3" id="trip">
+            <div class="img"></div>
+            <div class="date">23 August - 29 August</div>
+            <div class="info">
+              <div class="location">New Yourk</div>
+              <div class="price">$200</div>
+            </div>
+          </div>
+        </div>
+        <div id="book-guide"></div>
+        <div class="book-guide">
+          <div class="guide-1" id="guide">
+            <div class="img"></div>
+            <div class="date">1 April - 6 April</div>
+            <div class="info">
+              <div class="name">Ibrahim Ashraf</div>
+              <div class="price">$200</div>
+            </div>
+          </div>
+          <div class="guide-2" id="guide">
+            <div class="img"></div>
+            <div class="date">17 February - 23 February</div>
+            <div class="info">
+              <div class="name">Sara Ahmed</div>
+              <div class="price">$100</div>
+            </div>
+          </div>
+          <div class="guide-3" id="guide">
+            <div class="img"></div>
+            <div class="date">23 August - 29 August</div>
+            <div class="info">
+              <div class="name">Ahmed Walid</div>
+              <div class="price">$150</div>
+            </div>
+          </div>
+        </div>
+        <div id="trip-table"></div>
+        <div class="trip-table">
+          <table>
+            <caption>
+              Avilable Trips
+            </caption>
+
+            <tr>
+              <th>Trip</th>
+              <th>Start Day</th>
+              <th>End Day</th>
+              <th>Price</th>
+            </tr>
+            <tr>
+              <td>Egypt</td>
+              <td>23 August</td>
+              <td>29 August</td>
+              <td>$200</td>
+            </tr>
+            <tr>
+              <td>Egypt</td>
+              <td>23 August</td>
+              <td>29 August</td>
+              <td>$200</td>
+            </tr>
+            <tr>
+              <td>Egypt</td>
+              <td>23 August</td>
+              <td>29 August</td>
+              <td>$200</td>
+            </tr>
+            <tr>
+              <td>Egypt</td>
+              <td>23 August</td>
+              <td>29 August</td>
+              <td>$200</td>
+            </tr>
+            <tr>
+              <td>Egypt</td>
+              <td>23 August</td>
+              <td>29 August</td>
+              <td>$200</td>
+            </tr>
+            <tr>
+              <td>Egypt</td>
+              <td>23 August</td>
+              <td>29 August</td>
+              <td>$200</td>
+            </tr>
+          </table>
+        </div>
+        <div id="guide-table"></div>
+        <div class="guide-table">
+          <table>
+            <caption>
+              Avilable Guides
+            </caption>
+            <tr>
+              <th>Name</th>
+              <th>Language</th>
+              <th>Start Day</th>
+              <th>End Day</th>
+              <th>Price</th>
+            </tr>
+            <tr>
+              <td>Ibrahim Ashraf</td>
+              <td>23 August</td>
+              <td>29 August</td>
+              <td><span class="german">German</span></td>
+              <td>$200</td>
+            </tr>
+            <tr>
+              <td>Sara Ahmed</td>
+              <td>23 August</td>
+              <td>29 August</td>
+              <td><span class="french">French</span></td>
+              <td>$200</td>
+            </tr>
+            <tr>
+              <td>Maram Amer</td>
+              <td>23 August</td>
+              <td>29 August</td>
+              <td><span class="german">German</span></td>
+              <td>$200</td>
+            </tr>
+            <tr>
+              <td>Nouran Mohamed</td>
+              <td>23 August</td>
+              <td>29 August</td>
+              <td><span class="spanish">Spanish</span></td>
+              <td>$200</td>
+            </tr>
+            <tr>
+              <td>Amir Ayman</td>
+              <td>23 August</td>
+              <td>29 August</td>
+              <td><span class="english">English</span></td>
+              <td>$200</td>
+            </tr>
+            <tr>
+              <td>Asmaa Ismael</td>
+              <td>23 August</td>
+              <td>29 August</td>
+              <td><span class="spanish">Spanish</span></td>
+              <td>$200</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- Link JS File -->
+    <script src="../js/services.js"></script>
+  </body>
+</html>

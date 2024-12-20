@@ -1,0 +1,215 @@
+:root {
+  --main-color: white;
+  --txt-color: black;
+  --txt-color2: gray;
+}
+
+.dark {
+  --main-color: #181a1b;
+  --txt-color: white;
+  --txt-color2: cadetblue;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page .header {
+  margin: 20px 50px;
+  height: 10vh;
+  color: var(--txt-color);
+  position: relative;
+}
+
+.page .header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page .header .nav .logo {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 5px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.page .header .nav .menu-btn {
+  border: none;
+  background-color: transparent;
+  width: 22px;
+  height: 22px;
+  background-image: url("../imgs/menu-icon-black.svg");
+  cursor: pointer;
+}
+
+.nav .buttons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.nav .buttons .dark-btn {
+  width: 50px;
+  height: fit-content;
+  text-align: center;
+  padding: 5px 10px;
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+  color: var(--txt-color2);
+  border: 1px solid #333;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.page .header .line {
+  height: 2px;
+  width: 100%;
+  background-color: var(--txt-color2);
+  margin-top: 12px;
+}
+
+.page .header .links {
+  background-color: #f6f6f6;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  font-weight: bold;
+  position: absolute;
+  right: -15px;
+  top: 42px;
+  display: none;
+  z-index: 1000;
+  box-shadow: -15px 15px 15px black;
+}
+
+.header .links::before {
+  content: "";
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #f6f6f6 transparent;
+  position: absolute;
+  right: 15px;
+  top: -20px;
+}
+
+.page .header .links a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #333;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  cursor: pointer;
+}
+
+.page .header .links a:hover,
+.page .header .links .active {
+  padding-left: 30px;
+  color: cadetblue;
+}
+
+.header .links li:not(:last-child) a {
+  border-bottom: 1px solid #ddd;
+}
+
+.image img {
+  width: 100;
+  display: flex;
+}
+
+.aboutus {
+  padding-top: 5px;
+}
+
+h2 {
+  font-size: xx-large;
+  text-align: center;
+  color: rgb(63, 77, 90);
+}
+.aboutus ul {
+  text-align: center;
+  padding: 10px 150px 70px 150px;
+  font-weight: bold;
+}
+span {
+  color: rgb(16, 17, 17);
+}
+.imgpara {
+  margin-top: -70px;
+  background-image: url("alex-1635x1086-1.jpg");
+  color: rgb(13, 3, 71);
+  height: 600px;
+  align-content: center;
+  text-align: center;
+  font-size: 70px;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 150px;
+  margin-right: 150px;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding-bottom: 100px;
+}
+.card {
+  background-color: white;
+  width: 15em;
+  align-content: center;
+  margin-top: 50px;
+  box-shadow: 0px 5px 25px rgba(1 1 1/ 20%);
+  border-radius: 10px;
+  height: 300px;
+}
+.image img {
+  width: 100%;
+}
+.description {
+  text-align: center;
+  padding: 0px 10px 0px;
+  font-weight: 700;
+  font-size: 25px;
+  margin-bottom: 0px;
+  color: rgb(16, 115, 202);
+}
+
+.page .footer {
+  width: 100%;
+  height: 50px;
+  background-color: #191515;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page .footer span {
+  color: cadetblue;
+  font-weight: bold;
+}

@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 95%;
+  height: 95%;
+  background-color: #132438;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.container .left {
+  width: 48%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .left h2 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.container .left #slideshow {
+  width: 100%;
+}
+
+.container .left #slideshow img {
+  width: 100%;
+  display: none;
+}
+
+.container .left #slideshow img.active {
+  display: block;
+  border-radius: 15px;
+}
+
+.container .left a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #5f5b76;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-align: center;
+  width: 100%;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.container .left a:hover {
+  background-color: #4e4b66;
+}
+
+/* Right */
+.container .right {
+  width: 48%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .right .right-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container .right .right-content h2 {
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.container .right .right-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container .right .right-content form input {
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.container .right .right-content form input:focus {
+  outline: none;
+}
+
+.container .right .right-content form button {
+  padding: 15px;
+  border: none;
+  background-color: #6c63ff;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.container .right .right-content form button:hover {
+  background-color: #393750;
+}
+
+.container .right .right-content form .error {
+  color: red;
+}
+
+.container .right .right-content form .success {
+  color: green;
+}
+
+.container .right .right-content a {
+  color: #6c63ff;
+}
+
+form {
+  position: relative;
+}
+
+.pass-icon1 {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 140px;
+  right: 15px;
+  background-image: url("../imgs/pass-icon.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}

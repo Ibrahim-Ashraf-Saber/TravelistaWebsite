@@ -1,0 +1,266 @@
+:root {
+  --main-color: white;
+  --txt-color: black;
+  --txt-color2: gray;
+}
+
+.dark {
+  --main-color: #181a1b;
+  --txt-color: white;
+  --txt-color2: cadetblue;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--main-color);
+}
+
+.gallary-page {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.gallary-page .header {
+  margin: 20px 50px;
+  height: 10vh;
+  color: var(--txt-color);
+  position: relative;
+}
+
+.gallary-page .header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gallary-page .header .nav .logo {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 5px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.gallary-page .header .nav .menu-btn {
+  border: none;
+  background-color: transparent;
+  width: 22px;
+  height: 22px;
+  background-image: url("../imgs/menu-icon-black.svg");
+  cursor: pointer;
+}
+
+.nav .buttons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.nav .buttons .dark-btn {
+  width: 50px;
+  height: fit-content;
+  text-align: center;
+  padding: 5px 10px;
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+  color: var(--txt-color2);
+  border: 1px solid #333;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.gallary-page .header .line {
+  height: 2px;
+  width: 100%;
+  background-color: var(--txt-color2);
+  margin-top: 12px;
+}
+
+.gallary-page .header .links {
+  background-color: #f6f6f6;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  font-weight: bold;
+  position: absolute;
+  right: -15px;
+  top: 42px;
+  display: none;
+  z-index: 1000;
+  box-shadow: -15px 15px 15px black;
+}
+
+.header .links::before {
+  content: "";
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #f6f6f6 transparent;
+  position: absolute;
+  right: 15px;
+  top: -20px;
+}
+
+.gallary-page .header .links a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #333;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  cursor: pointer;
+}
+
+.gallary-page .header .links a:hover,
+.gallary-page .header .links .active {
+  padding-left: 30px;
+  color: cadetblue;
+}
+
+.header .links li:not(:last-child) a {
+  border-bottom: 1px solid #ddd;
+}
+
+.gallary-page .content {
+  margin: 10px 0;
+  position: relative;
+}
+
+.gallary-page .content h3 {
+  margin: 10px 50px;
+  margin-bottom: 40px;
+  font-size: 40px;
+  letter-spacing: 2px;
+  color: var(--txt-color2);
+}
+
+.gallary-page .content .photos {
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+  overflow: hidden;
+  height: 350px;
+}
+
+.gallary-page .content .photos .photo-1,
+.gallary-page .content .photos .photo-2,
+.gallary-page .content .photos .photo-3 {
+  width: 600px;
+  height: 300px;
+  background-color: aqua;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  box-shadow: -15px 15px 20px rgba(0, 0, 0, 0.6);
+}
+
+.gallary-page .content .photos .photo-1 {
+  background-image: url("../imgs/gallary-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.gallary-page .content .photos .photo-2 {
+  background-image: url("../imgs/gallary-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.gallary-page .content .photos .photo-3 {
+  background-image: url("../imgs/gallary-3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.gallary-page .content .footer {
+  margin-top: -15px;
+  display: flex;
+  gap: 300px;
+  justify-content: center;
+}
+
+.gallary-page .content .footer p {
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 10px;
+  color: var(--txt-color);
+}
+
+.gallary-page .content .footer button {
+  padding: 5px 20px;
+  font-weight: bold;
+  font-size: 16px;
+  color: var(--txt-color);
+  background-color: transparent;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border: 1px solid var(--txt-color);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  cursor: pointer;
+}
+
+.gallary-page .content .footer button:hover {
+  background-color: cadetblue;
+}
+
+.gallary-page .content .right,
+.gallary-page .content .left {
+  display: block;
+  width: 70px;
+  height: 70px;
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+  position: absolute;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border: 1px solid white;
+}
+
+.gallary-page .content .right img,
+.gallary-page .content .left img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.gallary-page .content .right {
+  top: 200px;
+  right: 100px;
+}
+
+.gallary-page .content .left {
+  top: 200px;
+  left: 100px;
+}
